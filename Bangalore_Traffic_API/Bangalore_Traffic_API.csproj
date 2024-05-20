@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Bangalore_Traffic_API-8e8e9afb-6212-42cc-a36e-f1abaa683b2b</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="7.0.0" />
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DatabaseContext\" />
+  </ItemGroup>
+</Project>
