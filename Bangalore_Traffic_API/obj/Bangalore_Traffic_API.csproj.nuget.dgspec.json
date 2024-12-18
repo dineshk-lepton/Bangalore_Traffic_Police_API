@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\Bangalore_Traffic_API.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\Bangalore_Traffic_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\Bangalore_Traffic_API.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\Bangalore_Traffic_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\Bangalore_Traffic_API.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\Bangalore_Traffic_API.csproj",
         "projectName": "Bangalore_Traffic_API",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\Bangalore_Traffic_API.csproj",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\Bangalore_Traffic_API.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\Bangalore_Traffic_Police_API\\Bangalore_Traffic_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -108,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

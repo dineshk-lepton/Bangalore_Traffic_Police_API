@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bangalore_Traffic_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817d4e866d992055459ca5bc0ca128a53e0cc0c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bangalore_Traffic_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bangalore_Traffic_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
