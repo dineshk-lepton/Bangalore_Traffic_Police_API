@@ -116,7 +116,7 @@ namespace Bangalore_Traffic_API.BAL
             //string startDate = DateTime.Now.ToString("yyyy-MM-dd") + _config["FinalDataAPIDetails:start_date"];
             //string endDate = DateTime.Now.ToString("yyyy-MM-dd")+ _config["FinalDataAPIDetails:end_date"];
             //string statusChoice = _config["FinalDataAPIDetails:status_choice"];
-           // string authenticated = _config["FinalDataAPIDetails:authenticated"];
+           string authenticated = _config["FinalDataAPIDetails:authenticated"];
            // int client = int.Parse(_config["FinalDataAPIDetails:client"]);
             try
             {
@@ -147,8 +147,10 @@ namespace Bangalore_Traffic_API.BAL
                   "\"authenticated\":\"" + authenticated + "\","+
                   "\"client\":" + client + "}", null, "application/json");*/
 
-                var content = new StringContent("{\"start_date\":\"" + startDate + "\"," +
-                  "\"end_date\":\"" + endDate + "\"}", null, "application/json");
+                var content = new StringContent( "{ \"start_date\": \"" + startDate + "\"," +
+     "\"end_date\": \"" + endDate + "\"," +
+     "\"authenticated\": \"" + authenticated + "\" }", null,"application/json");
+
                 request.Content = content;
 
                 // Send the HTTP request and get the response
@@ -180,7 +182,7 @@ namespace Bangalore_Traffic_API.BAL
                                 api_data_id = api.id,
                                 image_id = img.image_id,
                                 //image = "https://airavt.ai" + img.image,
-                                image = "https://airavt.ai" + img.image,
+                                image = img.image,
                                 imgevent = img.imgevent
                             })
                             .ToList();
