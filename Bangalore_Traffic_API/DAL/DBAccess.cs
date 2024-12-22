@@ -132,7 +132,18 @@ namespace Bangalore_Traffic_API.DAL
 
                         }
 
-                        query = query + "(" + item.id + ",\'" + item.last_modified_by + "\',\'" + item.event_type + "\',\'" + item.latitude + "\',\'" + item.longitude + "\',\'" + item.endlatitude + "\',\'" + item.endlongitude + "\',\"" + item.location + "\",\'" + item.event_cause + "\'," + item.requires_road_closure + ",\'" + start_datetime + "\',\'" + end_datetime + "\',\'" + item.status + "\',\'" + item.authenticated + "\',\'" + modified_datetime + "\',\'" + item.map_file + "\',\'" + item.direction + "\',\"" + item.description.Replace("\"","'") + "\",'3',\""+ DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")+ "\"),";
+                        if (string.IsNullOrEmpty(item.endlatitude) || item.endlatitude == "0.0")
+                        {
+                            item.endlatitude = "";
+                        }
+                        if (string.IsNullOrEmpty(item.endlongitude) || item.endlongitude == "0.0")
+                        {
+                            item.endlongitude = "";
+                        }
+
+                        query = query + "(" + item.id + ",\'" + item.last_modified_by + "\',\'" + item.event_type + "\',\'" + item.latitude + "\',\'" + item.longitude + "\',\'" + item.endlatitude + "\',\'" + item.endlongitude + "\',\"" + item.address + "\",\'" + item.event_cause + "\'," + item.requires_road_closure + ",\'" + start_datetime + "\',\'" + end_datetime + "\',\'" + item.status + "\',\'" + item.authenticated + "\',\'" + modified_datetime + "\',\'" + item.map_file + "\',\'" + item.direction + "\',\"" + item.description.Replace("\"", "'") + "\",'3',\"" + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") + "\"),";
+
+                        //query = query + "(" + item.id + ",\'" + item.last_modified_by + "\',\'" + item.event_type + "\',\'" + item.latitude + "\',\'" + item.longitude + "\',\'" + item.endlatitude + "\',\'" + item.endlongitude + "\',\"" + item.location + "\",\'" + item.event_cause + "\'," + item.requires_road_closure + ",\'" + start_datetime + "\',\'" + end_datetime + "\',\'" + item.status + "\',\'" + item.authenticated + "\',\'" + modified_datetime + "\',\'" + item.map_file + "\',\'" + item.direction + "\',\"" + item.description.Replace("\"","'") + "\",'3',\""+ DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")+ "\"),";
                         //query =query+ " VALUES (" + item.id + ",\'" + item.last_modified_by + "\',\'" + item.event_type + "\',\'" + item.latitude + "\',\'" + item.longitude + "\',\'" + item.endlatitude + "\',\'" + item.endlongitude + "\',\'" + item.location + "\',\'" + item.event_cause + "\'," + item.requires_road_closure + ",DATE_FORMAT(STR_TO_DATE(\'" + item.start_datetime+ "\', '%m/%d/%Y %h:%i:%s %p'), '%Y-%m-%d %h:%i:%s %p'),DATE_FORMAT(STR_TO_DATE(\'" + item.end_datetime+ "\', '%m/%d/%Y %h:%i:%s %p'), '%Y-%m-%d %h:%i:%s %p'),\'" + item.status + "\',\'" + item.authenticated + "\',DATE_FORMAT(STR_TO_DATE(\'"+item.modified_datetime+"\', '%m/%d/%Y %h:%i:%s %p'), '%Y-%m-%d %h:%i:%s %p'),\'" + item.map_file + "\',\'" + item.direction + "\',\'" + item.description + "\'),";
                         // query = query + " VALUES (" + item.id + ",\"" + item.last_modified_by + "\",\"" + item.event_type + "\",\"" + item.latitude + "\",\"" + item.longitude + "\",\"" + item.endlatitude + "\",\"" + item.endlongitude + "\",\"" + item.location + "\",\"" + item.event_cause + "\"," + item.requires_road_closure + "," + item.start_datetime + "," + item.end_datetime + ",\"" + item.status + "\",\"" + item.authenticated + "\"," + item.modified_datetime + ",\"" + item.map_file + "\",\"" + item.direction + "\",\"" + item.description + "\"),";
                     }

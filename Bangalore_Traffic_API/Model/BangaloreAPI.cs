@@ -20,8 +20,9 @@ namespace Bangalore_Traffic_API.Model
             public string longitude { get; set; }
             public string? endlatitude { get; set; }
             public string? endlongitude { get; set; }
-            public string location { get; set; }
-            public string event_cause { get; set; }
+            //public string location { get; set; }
+        public string address { get; set; }
+        public string event_cause { get; set; }
             public bool requires_road_closure { get; set; }
             public string start_datetime { get; set; }
             public string end_datetime { get; set; }
